@@ -1,15 +1,23 @@
 {
   "name": "brt",
+  "productName": "BRT",
   "version": "1.0.0",
   "description": "Basic Run Timer.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rsandor/brt.git"
+  },
   "main": "index.js",
   "scripts": {
     "start": "electron .",
+    "package": "electron-packager  ./ --out=./packages --overwrite --platform=win32",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ryan Sandor Richards",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^2.0.7"
+    "electron": "2.0.7",
+    "electron-packager": "^12.1.0",
+    "electron-prebuilt-compile": "2.0.7"
   }
 }

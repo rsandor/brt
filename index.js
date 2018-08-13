@@ -10,6 +10,7 @@ function createWindow() {
     transparent: true
   })
   win.loadFile('./src/index.html')
+  win.on('closed', () => process.exit(0))
 
   if (process.env.NODE_ENV === 'development') {
     win.toggleDevTools()
