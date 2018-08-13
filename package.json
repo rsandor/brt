@@ -1,0 +1,15 @@
+{
+  "name": "brt",
+  "version": "1.0.0",
+  "description": "Basic Run Timer.",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan Sandor Richards",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^2.0.7"
+  }
+}

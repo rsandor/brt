@@ -1,0 +1,92 @@
+@font-face {
+	font-family: 'courier_prime_codeitalic';
+	src: url('../fonts/courier_prime_code_italic-webfont.woff2') format('woff2'),
+		url('../fonts/courier_prime_code_italic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+::-webkit-scrollbar { 
+  display: none; 
+}
+
+html, body {
+	margin: 0;
+	height: 100%;
+	background-color: #000;
+	user-select: none;
+}
+
+body {
+	height: 100%;
+}
+
+#display {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+#display #time-text {
+	color: rgba(255, 255, 255, 0.95);
+	font-family: 'courier_prime_codeitalic';
+	font-size: 21.2vw;
+	width: 100%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-55%);
+}
+
+.colon, .dot {
+    display: inline-block;
+    margin-left: -3vw;
+    margin-right: -3vw;
+}
+
+#centiseconds, .dot {
+	font-size: 50%;
+	padding-left: 0.5vw;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+#title-bar {
+	width: 100%;
+	height: 25px;
+	background: rgba(255, 255, 255, 0.15);
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+#title-bar .text {
+	height: 19px;
+	padding-top: 6px;
+	color: #aaa;
+	font-size: 9pt;
+	font-family: Helvetica;
+	padding-left: 5px;
+	flex-grow: 1;
+	-webkit-app-region: drag;
+}
+
+#title-bar .button {
+	font-size: 23px;
+	font-weight: bold;
+	width: 25px;
+	height: 25px;
+	border: none;
+	cursor: pointer;
+	background-position: 0 0;
+	background-size: 25px 25px;
+	background: #444;
+	color: #bbb;
+	text-align: center;
+}
+
+#title-bar .button:hover {
+	background: #555;
+}
