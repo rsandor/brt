@@ -16,7 +16,7 @@
   "author": "Ryan Sandor Richards",
   "license": "MIT",
   "devDependencies": {
-    "electron": "2.0.7",
+    "electron": "^11.1.1",
     "electron-packager": "^12.1.0",
     "electron-prebuilt-compile": "2.0.7"
   }

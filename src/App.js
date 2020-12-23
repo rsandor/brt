@@ -71,4 +71,4 @@ class App {
   }
 }
 
-window.App = App 
+window.App = App
